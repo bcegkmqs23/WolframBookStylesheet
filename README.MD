@@ -11,6 +11,7 @@
 	* Figure
 	* Table
 	* Reference（含Hyperlink）
+	* LaTeX Equation
 * 单元标签的计数：CounterIncrement与CounterAssignment等
 * 单元的自动分组与隐藏（主要是隐藏一些控制结构用的辅助单元）
 * 单元间的替代与依赖（应该需要作为一个外部程序包来起到格式化笔记本文件的作用，样式表支持的指令太少了）
