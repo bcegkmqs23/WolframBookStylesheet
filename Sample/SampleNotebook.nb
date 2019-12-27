@@ -1,0 +1,194 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7995,        186]
+NotebookOptionsPosition[      4744,        140]
+NotebookOutlinePosition[      5110,        156]
+CellTagsIndexPosition[      5067,        153]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Chapter Title", "Section",
+ CellChangeTimes->{{3.785662848124263*^9, 3.7856628532537293`*^9}, {
+  3.786429405814148*^9, 
+  3.7864294086639686`*^9}},ExpressionUUID->"c3de3c92-0ec8-4399-82a4-\
+8b646b31649d"],
+
+Cell[CellGroupData[{
+
+Cell["Section Title", "Section",
+ CellChangeTimes->{{3.7864294131836805`*^9, 3.7864294406719446`*^9}, {
+  3.78642954515158*^9, 
+  3.7864295499812765`*^9}},ExpressionUUID->"16462fe6-7d03-4878-9db5-\
+f5c6ff219d59"],
+
+Cell["Subsection Title", "Subsection",
+ CellChangeTimes->{{3.7864295559309*^9, 
+  3.786429560120634*^9}},ExpressionUUID->"d99bb306-4c22-4121-82b8-\
+92339e567526"],
+
+Cell["Plain", "Plain",
+ CellChangeTimes->{{3.7864294230330596`*^9, 3.786429425912877*^9}, {
+  3.786429581729287*^9, 
+  3.7864296154071426`*^9}},ExpressionUUID->"8758acda-1e6f-40ad-bced-\
+8e4bb033ed8a"],
+
+Cell["Box", "Box",
+ CellChangeTimes->{{3.7864296176170015`*^9, 
+  3.786429617846988*^9}},ExpressionUUID->"4e513172-37a8-42d5-8107-\
+bb902c1cff2e"],
+
+Cell["", "Definition",ExpressionUUID->"f516468e-4ba1-4533-b2d0-63a4ef66919b"],
+
+Cell["", "Example",ExpressionUUID->"ebc15730-eaaf-450f-a479-9ce438ced627"],
+
+Cell["", "Remark",ExpressionUUID->"b7bdceaa-20bb-48a7-9240-9146f118e65d"],
+
+Cell["", "Proposition",ExpressionUUID->"02dc7a72-41c8-42f2-b82c-0ae3a1e38df2"],
+
+Cell["", "Theorem",ExpressionUUID->"8f7c60f8-6927-4676-ba06-b46b330e5a1e"],
+
+Cell["", "Corrolary",ExpressionUUID->"a8d46148-3688-4263-8d45-86e72a6033d4"],
+
+Cell["", "Proof",ExpressionUUID->"5d9963bb-0085-437f-bf13-cd1e5bde5f09"],
+
+Cell["", "Exercise",ExpressionUUID->"8c7ca9ae-e6e8-46ac-b0ee-632b2e3f09fa"],
+
+Cell["", "Solution",ExpressionUUID->"43cfefca-6e12-48d9-894c-3ccce872550b"],
+
+Cell["Text", "Text",
+ CellChangeTimes->{{3.786431906522605*^9, 
+  3.786431911172311*^9}},ExpressionUUID->"950d2e2c-42ff-426a-8cd9-\
+2c390e46cb5b"],
+
+Cell["ItemNumbered", "ItemNumbered",
+ CellChangeTimes->{{3.786433139115935*^9, 
+  3.7864331541249847`*^9}},ExpressionUUID->"b907ec7d-dfb2-4c1c-998c-\
+033f840d8e26"],
+
+Cell["SubItemNumbered", "SubItemNumbered",
+ CellChangeTimes->{{3.786433140685853*^9, 
+  3.786433153515041*^9}},ExpressionUUID->"2b017b0c-5eb2-4b90-8672-\
+0adb819a444b"],
+
+Cell["", "SubItemNumbered",
+ CellChangeTimes->{{3.7864331441556163`*^9, 
+  3.786433145275566*^9}},ExpressionUUID->"de9058ea-2d73-4a25-b0fe-\
+eade8999da10"],
+
+Cell["SubsubItemNumbered", "SubsubItemNumbered",
+ CellChangeTimes->{{3.786432397449403*^9, 3.7864323981293592`*^9}, {
+  3.7864331463254814`*^9, 
+  3.78643314962527*^9}},ExpressionUUID->"aca99ec9-6aa6-409d-981b-\
+579df1f96e42"],
+
+Cell["", "SubsubItemNumbered",ExpressionUUID->"24a867b4-104d-4cfe-adaf-8acbeb07a8e6"],
+
+Cell["", "SubsubItemNumbered",ExpressionUUID->"230e69eb-e801-423b-8f10-f25b7916eddf"],
+
+Cell["", "SubsubItemNumbered",ExpressionUUID->"8f96ff3a-8ab2-4071-9330-f73a20237901"],
+
+Cell["", "ItemNumbered",ExpressionUUID->"05709dbd-c064-421d-bd6c-c8fbe646431a"],
+
+Cell["Item", "Item",
+ CellChangeTimes->{{3.786432616028493*^9, 3.786432661405839*^9}, {
+  3.786433159824642*^9, 
+  3.786433160104608*^9}},ExpressionUUID->"fdcf1ed4-54e3-41f4-a85d-\
+ec2c8bba4e93"],
+
+Cell["SubItem", "SubItem",
+ CellChangeTimes->{{3.7864331618444967`*^9, 
+  3.786433163454396*^9}},ExpressionUUID->"018edc43-81a2-4384-b086-\
+602d77aa9ec8"],
+
+Cell["SubsubItem", "SubsubItem",
+ CellChangeTimes->{{3.7864331649243035`*^9, 
+  3.7864331672641735`*^9}},ExpressionUUID->"18589f48-32c7-41f6-8a15-\
+e936eb7d35d2"],
+
+Cell["", "Text",ExpressionUUID->"aabc9317-f704-4490-bdaf-657033102f82"],
+
+Cell["\"\\\\frac{1}{2}\"", "LaTeXEquation",
+ CellChangeTimes->{{3.7864328572334666`*^9, 3.7864328592633386`*^9}, {
+  3.7864329117000275`*^9, 
+  3.786432937578411*^9}},ExpressionUUID->"225ad7f2-506a-4265-8cba-\
+b1bd7538bb87"],
+
+Cell[BoxData[
+ FractionBox["1", "2"]], "Equation",ExpressionUUID->"b67282ea-4936-47a9-be32-6ee561369055"],
+
+Cell["Equation", "Equation",
+ CellChangeTimes->{{3.7864331264267344`*^9, 
+  3.7864331299265122`*^9}},ExpressionUUID->"f984bcd6-2368-4562-b99c-\
+c7a389338524"],
+
+Cell["EquationNumbered\[LineSeparator]", "EquationNumbered",
+ CellChangeTimes->{{3.7864331222970147`*^9, 
+  3.7864331332463236`*^9}},ExpressionUUID->"0048ad02-40ab-489c-a85b-\
+75e169213d25"]
+}, Open  ]]
+},
+WindowSize->{775, 553},
+WindowMargins->{{244, Automatic}, {Automatic, 54}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (2017\:5e7410\:67082\
+\:65e5)",
+StyleDefinitions->"SampleStylesheet.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 211, 4, 63, "Section",ExpressionUUID->"c3de3c92-0ec8-4399-82a4-8b646b31649d"],
+Cell[CellGroupData[{
+Cell[794, 28, 212, 4, 47, "Section",ExpressionUUID->"16462fe6-7d03-4878-9db5-f5c6ff219d59"],
+Cell[1009, 34, 162, 3, 20, "Subsection",ExpressionUUID->"d99bb306-4c22-4121-82b8-92339e567526"],
+Cell[1174, 39, 201, 4, 29, "Plain",ExpressionUUID->"8758acda-1e6f-40ad-bced-8e4bb033ed8a"],
+Cell[1378, 45, 146, 3, 54, "Box",ExpressionUUID->"4e513172-37a8-42d5-8107-bb902c1cff2e"],
+Cell[1527, 50, 77, 0, 54, "Definition",ExpressionUUID->"f516468e-4ba1-4533-b2d0-63a4ef66919b"],
+Cell[1607, 52, 74, 0, 54, "Example",ExpressionUUID->"ebc15730-eaaf-450f-a479-9ce438ced627"],
+Cell[1684, 54, 73, 0, 54, "Remark",ExpressionUUID->"b7bdceaa-20bb-48a7-9240-9146f118e65d"],
+Cell[1760, 56, 78, 0, 54, "Proposition",ExpressionUUID->"02dc7a72-41c8-42f2-b82c-0ae3a1e38df2"],
+Cell[1841, 58, 74, 0, 54, "Theorem",ExpressionUUID->"8f7c60f8-6927-4676-ba06-b46b330e5a1e"],
+Cell[1918, 60, 76, 0, 54, "Corrolary",ExpressionUUID->"a8d46148-3688-4263-8d45-86e72a6033d4"],
+Cell[1997, 62, 72, 0, 54, "Proof",ExpressionUUID->"5d9963bb-0085-437f-bf13-cd1e5bde5f09"],
+Cell[2072, 64, 75, 0, 54, "Exercise",ExpressionUUID->"8c7ca9ae-e6e8-46ac-b0ee-632b2e3f09fa"],
+Cell[2150, 66, 75, 0, 20, "Solution",ExpressionUUID->"43cfefca-6e12-48d9-894c-3ccce872550b"],
+Cell[2228, 68, 146, 3, 34, "Text",ExpressionUUID->"950d2e2c-42ff-426a-8cd9-2c390e46cb5b"],
+Cell[2377, 73, 164, 3, 31, "ItemNumbered",ExpressionUUID->"b907ec7d-dfb2-4c1c-998c-033f840d8e26"],
+Cell[2544, 78, 168, 3, 20, "SubItemNumbered",ExpressionUUID->"2b017b0c-5eb2-4b90-8672-0adb819a444b"],
+Cell[2715, 83, 155, 3, 20, "SubItemNumbered",ExpressionUUID->"de9058ea-2d73-4a25-b0fe-eade8999da10"],
+Cell[2873, 88, 226, 4, 20, "SubsubItemNumbered",ExpressionUUID->"aca99ec9-6aa6-409d-981b-579df1f96e42"],
+Cell[3102, 94, 85, 0, 20, "SubsubItemNumbered",ExpressionUUID->"24a867b4-104d-4cfe-adaf-8acbeb07a8e6"],
+Cell[3190, 96, 85, 0, 20, "SubsubItemNumbered",ExpressionUUID->"230e69eb-e801-423b-8f10-f25b7916eddf"],
+Cell[3278, 98, 85, 0, 20, "SubsubItemNumbered",ExpressionUUID->"8f96ff3a-8ab2-4071-9330-f73a20237901"],
+Cell[3366, 100, 79, 0, 31, "ItemNumbered",ExpressionUUID->"05709dbd-c064-421d-bd6c-c8fbe646431a"],
+Cell[3448, 102, 195, 4, 31, "Item",ExpressionUUID->"fdcf1ed4-54e3-41f4-a85d-ec2c8bba4e93"],
+Cell[3646, 108, 154, 3, 20, "SubItem",ExpressionUUID->"018edc43-81a2-4384-b086-602d77aa9ec8"],
+Cell[3803, 113, 162, 3, 20, "SubsubItem",ExpressionUUID->"18589f48-32c7-41f6-8a15-e936eb7d35d2"],
+Cell[3968, 118, 71, 0, 34, "Text",ExpressionUUID->"aabc9317-f704-4490-bdaf-657033102f82"],
+Cell[4042, 120, 224, 4, 20, "LaTeXEquation",ExpressionUUID->"225ad7f2-506a-4265-8cba-b1bd7538bb87"],
+Cell[4269, 126, 105, 1, 49, "Equation",ExpressionUUID->"b67282ea-4936-47a9-be32-6ee561369055"],
+Cell[4377, 129, 158, 3, 20, "Equation",ExpressionUUID->"f984bcd6-2368-4562-b99c-c7a389338524"],
+Cell[4538, 134, 190, 3, 33, "EquationNumbered",ExpressionUUID->"0048ad02-40ab-489c-a85b-75e169213d25"]
+}, Open  ]]
+}
+]
+*)
+
