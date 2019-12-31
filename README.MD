@@ -30,6 +30,7 @@
 	* Palette
 	* ConversionRules
 	* 提供一个quickstart来自动生成样式表，其中的一些规则由用户指定。
+	* 调用TeX编译器来生成公式图片
 
 	各功能都可参考自带样式表（尤其是PublicationDefault）中的技术，并对标LaTeX等其他排版环境去展开实现。
 

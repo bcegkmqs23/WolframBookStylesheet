@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10433,        236]
-NotebookOptionsPosition[      9977,        219]
-NotebookOutlinePosition[     10365,        236]
-CellTagsIndexPosition[     10322,        233]
+NotebookDataLength[     10548,        244]
+NotebookOptionsPosition[      9974,        224]
+NotebookOutlinePosition[     10480,        244]
+CellTagsIndexPosition[     10437,        241]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -28,45 +28,48 @@ Cell[BoxData[
     RowBox[{"CellEvaluationFunction", " ", "->", " ", 
      RowBox[{"(", 
       RowBox[{
-       RowBox[{
-        RowBox[{"Function", "[", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"fnlabel", ",", "fntext"}], "}"}], ",", " ", "\n", "\t\t", 
+       RowBox[{"Apply", "[", 
+        RowBox[{
+         RowBox[{"Function", "[", 
           RowBox[{
-           RowBox[{"SelectionMove", "[", 
-            RowBox[{
-             RowBox[{"NextCell", "[", 
-              RowBox[{"CellStyle", " ", "->", " ", "\"\<Chapter\>\""}], "]"}],
-              ",", " ", "Before", ",", " ", "Cell"}], "]"}], ";", "\n", 
-           "\t\t", 
-           RowBox[{"NotebookWrite", "[", "\n", "\t\t\t", 
-            RowBox[{
-             RowBox[{"EvaluationNotebook", "[", "]"}], ",", " ", "\n", 
-             "\t\t\t", 
-             RowBox[{"Cell", "[", "\n", "\t\t\t\t", 
-              RowBox[{
-               RowBox[{"BoxData", "@", 
-                RowBox[{"RowBox", "@", 
-                 RowBox[{"{", "\n", "\t\t\t\t\t", 
-                  RowBox[{"fntext", ",", "\n", "\t\t\t\t\t", 
-                   RowBox[{"Cell", "[", "\n", "\t\t\t\t\t\t", 
+           RowBox[{"{", 
+            RowBox[{"fnlabel", ",", "fntext"}], "}"}], ",", " ", "\n", "\t\t", 
+           RowBox[{
+            RowBox[{"SelectionMove", "[", 
+             RowBox[{
+              RowBox[{"EvaluationCell", "[", "]"}], ",", " ", "After", ",", 
+              " ", "Cell"}], "]"}], ";", "\n", "\t\t", 
+            RowBox[{"SelectionMove", "[", 
+             RowBox[{
+              RowBox[{"PreviousCell", "[", 
+               RowBox[{
+               "CellStyle", " ", "->", " ", "\"\<FootnoteDocker\>\""}], "]"}],
+               ",", " ", "After", ",", " ", "Cell"}], "]"}], ";", "\n", 
+            "\t\t", 
+            RowBox[{"NotebookWrite", "[", "\n", "\t\t\t", 
+             RowBox[{
+              RowBox[{"EvaluationNotebook", "[", "]"}], ",", " ", "\n", 
+              "\t\t\t", 
+              RowBox[{"Cell", "[", "\n", "\t\t\t\t", 
+               RowBox[{
+                RowBox[{"BoxData", "@", 
+                 RowBox[{"RowBox", "@", 
+                  RowBox[{"{", "\n", "\t\t\t\t\t", 
+                   RowBox[{
+                    RowBox[{"Cell", "[", "\n", "\t\t\t\t\t\t", 
                     RowBox[{"BoxData", "@", 
                     RowBox[{"ButtonBox", "[", "\n", "\t\t\t\t\t\t\t", 
                     RowBox[{
                     RowBox[{"Cell", "[", "\n", "\t\t\t\t\t\t\t\t", 
                     RowBox[{
-                    RowBox[{"TagBox", "[", 
+                    RowBox[{"TagBox", "[", "\n", "\t\t\t\t\t\t\t\t\t", 
                     RowBox[{
-                    RowBox[{"RowBox", "[", 
-                    RowBox[{"{", "\n", "\t\t\t\t\t\t\t\t\t\t", 
-                    RowBox[{"\"\<[\>\"", ",", "\n", "\t\t\t\t\t\t\t\t\t\t", 
-                    RowBox[{
-                    "CounterBox", "[", "\n", "\t\t\t\t\t\t\t\t\t\t\t", 
-                    "\"\<FootnoteText\>\"", "\n", "\t\t\t\t\t\t\t\t\t\t", 
-                    "]"}], ",", "\n", "\t\t\t\t\t\t\t\t\t\t", "\"\<]\>\""}], 
-                    "\n", "\t\t\t\t\t\t\t\t\t", "}"}], "]"}], "\n", 
-                    "\t\t\t\t\t\t\t\t", ",", 
+                    RowBox[{"RowBox", "@", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<[\>\"", ",", " ", 
+                    RowBox[{"CounterBox", "@", "\"\<FootnoteText\>\""}], ",", 
+                    " ", "\"\<]\>\""}], "}"}]}], "\n", "\t\t\t\t\t\t\t\t", 
+                    ",", " ", 
                     RowBox[{"BoxID", " ", "->", " ", 
                     RowBox[{"{", 
                     RowBox[{"\"\<FootnoteNum\>\"", ",", " ", "fnlabel"}], 
@@ -83,75 +86,73 @@ Cell[BoxData[
                     "\t\t\t\t\t\t", ",", " ", 
                     RowBox[{
                     "Method", " ", "->", " ", "\"\<Preemptive\>\""}]}], 
-                    "]"}]}], "\n", "\t\t\t\t\t", "]"}]}], "\n", "\t\t\t\t", 
-                  "}"}]}]}], "\n", "\t\t\t\t", ",", " ", 
-               "\"\<FootnoteText\>\"", "\n", "\t\t\t\t", ",", " ", 
-               RowBox[{"CellTags", " ", "->", " ", 
-                RowBox[{"{", 
-                 RowBox[{"\"\<FootnoteText\>\"", "<>", "fnlabel"}], "}"}]}]}],
-               "\n", "\t\t\t", "]"}]}], "\n", "\t\t", "]"}], ";", "\n", 
-           "\t\t", 
-           RowBox[{"NotebookWrite", "[", "\n", "\t\t\t", 
-            RowBox[{
-             RowBox[{"EvaluationCell", "[", "]"}], ",", " ", "\n", "\t\t\t", 
-             RowBox[{"Cell", "[", "\n", "\t\t\t\t", 
-              RowBox[{
-               RowBox[{"BoxData", "@", 
-                RowBox[{"ButtonBox", "[", "\n", "\t\t\t\t\t", 
-                 RowBox[{
-                  RowBox[{"Cell", "[", "\n", "\t\t\t\t\t\t", 
-                   RowBox[{
+                    "]"}]}], "\n", "\t\t\t\t\t", "]"}], ",", "\n", 
+                    "\t\t\t\t\t", "fntext"}], "\n", "\t\t\t\t", "}"}]}]}], 
+                "\n", "\t\t\t\t", ",", " ", "\"\<FootnoteText\>\"", "\n", 
+                "\t\t\t\t", ",", " ", 
+                RowBox[{"CellTags", " ", "->", " ", 
+                 RowBox[{"{", 
+                  RowBox[{"\"\<FootnoteText\>\"", "<>", "fnlabel"}], 
+                  "}"}]}]}], "\n", "\t\t\t", "]"}]}], "\n", "\t\t", "]"}], 
+            ";", "\n", "\t\t", 
+            RowBox[{"NotebookWrite", "[", "\n", "\t\t\t", 
+             RowBox[{
+              RowBox[{"EvaluationCell", "[", "]"}], ",", " ", "\n", "\t\t\t", 
+              RowBox[{"Cell", "[", "\n", "\t\t\t\t", 
+               RowBox[{
+                RowBox[{"BoxData", "@", 
+                 RowBox[{"ButtonBox", "[", "\n", "\t\t\t\t\t", 
+                  RowBox[{
+                   RowBox[{"Cell", "[", "\n", "\t\t\t\t\t\t", 
+                    RowBox[{
                     RowBox[{"BoxData", "@", 
                     RowBox[{"DynamicBox", "@", 
                     RowBox[{"Refresh", "[", "\n", "\t\t\t\t\t\t\t", 
                     RowBox[{
                     RowBox[{"Cell", "[", "\n", "\t\t\t\t\t\t\t\t", 
-                    RowBox[{"TextData", "@", 
-                    RowBox[{"{", "\n", "\t\t\t\t\t\t\t\t\t", 
-                    RowBox[{"\"\<[\>\"", ",", " ", "\n", "\t\t\t\t\t\t\t\t\t", 
+                    RowBox[{"BoxData", "@", 
                     RowBox[{"FrontEndExecute", "@", 
                     RowBox[{"FrontEnd`BoxReferenceRead", "@", 
                     RowBox[{
-                    "FE`BoxReference", "[", "\n", "\t\t\t\t\t\t\t\t\t\t", 
+                    "FE`BoxReference", "[", "\n", "\t\t\t\t\t\t\t\t\t", 
                     RowBox[{
                     RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\n", 
-                    "\t\t\t\t\t\t\t\t\t\t", 
+                    "\t\t\t\t\t\t\t\t\t", 
                     RowBox[{"{", 
                     RowBox[{"{", 
                     RowBox[{"\"\<FootnoteNum\>\"", ",", " ", "fnlabel"}], 
-                    "}"}], "}"}], "\n", "\t\t\t\t\t\t\t\t\t\t", ",", " ", 
+                    "}"}], "}"}], "\n", "\t\t\t\t\t\t\t\t\t", ",", " ", 
                     RowBox[{"FE`BoxOffset", " ", "->", " ", 
                     RowBox[{"{", 
                     RowBox[{"FE`BoxChild", "[", "1", "]"}], "}"}]}], "\n", 
-                    "\t\t\t\t\t\t\t\t\t\t", ",", " ", 
+                    "\t\t\t\t\t\t\t\t\t", ",", " ", 
                     RowBox[{
                     "FE`SearchStart", " ", "->", " ", 
                     "\"\<StartFromBeginning\>\""}]}], "\n", 
-                    "\t\t\t\t\t\t\t\t\t", "]"}]}]}], ",", "\n", 
-                    "\t\t\t\t\t\t\t\t\t", "\"\<]\>\""}], "\n", 
-                    "\t\t\t\t\t\t\t\t", "}"}]}], "\n", "\t\t\t\t\t\t\t", 
+                    "\t\t\t\t\t\t\t\t", "]"}]}]}]}], "\n", "\t\t\t\t\t\t\t", 
                     "]"}], "\n", "\t\t\t\t\t\t", ",", " ", 
                     RowBox[{"UpdateInterval", " ", "->", " ", "1"}]}], 
                     "]"}]}]}], "\n", "\t\t\t\t\t", ",", " ", "\"\<Link\>\""}],
-                    "]"}], "\n", "\t\t\t\t\t", ",", " ", 
-                  RowBox[{"ButtonFunction", " ", ":>", " ", 
-                   RowBox[{"NotebookLocate", "[", 
+                     "]"}], "\n", "\t\t\t\t\t", ",", " ", 
+                   RowBox[{"ButtonFunction", " ", ":>", " ", 
+                    RowBox[{"NotebookLocate", "[", 
                     RowBox[{"\"\<FootnoteText\>\"", "<>", "fnlabel"}], 
                     "]"}]}], "\n", "\t\t\t\t\t", ",", " ", 
-                  RowBox[{"Appearance", " ", "->", " ", "\"\<Frameless\>\""}],
-                   "\n", "\t\t\t\t\t", ",", " ", 
-                  RowBox[{"Evaluator", " ", "->", " ", "Automatic"}], "\n", 
-                  "\t\t\t\t\t", ",", " ", 
-                  RowBox[{"Method", " ", "->", " ", "\"\<Preemptive\>\""}]}], 
-                 "\n", "\t\t\t\t", "]"}]}], "\n", "\t\t\t\t", ",", " ", 
-               "\"\<FootnoteNum\>\"", "\n", "\t\t\t\t", ",", " ", 
-               RowBox[{"CellTags", " ", "->", " ", 
-                RowBox[{"{", 
-                 RowBox[{"\"\<FootnoteLabel\>\"", "<>", "fnlabel"}], 
-                 "}"}]}]}], "\n", "\t\t\t", "]"}]}], "\n", "\t\t", "]"}]}]}], 
-         "\n", "\t", "]"}], "@@", 
-        RowBox[{"ToExpression", "@", "#"}]}], "&"}], ")"}]}], "\n", "\t", ",",
-     " ", 
+                   RowBox[{
+                   "Appearance", " ", "->", " ", "\"\<Frameless\>\""}], "\n", 
+                   "\t\t\t\t\t", ",", " ", 
+                   RowBox[{"Evaluator", " ", "->", " ", "Automatic"}], "\n", 
+                   "\t\t\t\t\t", ",", " ", 
+                   RowBox[{"Method", " ", "->", " ", "\"\<Preemptive\>\""}]}],
+                   "\n", "\t\t\t\t", "]"}]}], "\n", "\t\t\t\t", ",", " ", 
+                "\"\<FootnoteNum\>\"", "\n", "\t\t\t\t", ",", " ", 
+                RowBox[{"CellTags", " ", "->", " ", 
+                 RowBox[{"{", 
+                  RowBox[{"\"\<FootnoteLabel\>\"", "<>", "fnlabel"}], 
+                  "}"}]}]}], "\n", "\t\t\t", "]"}]}], "\n", "\t\t", "]"}]}]}],
+           "\n", "\t", "]"}], ",", 
+         RowBox[{"ToExpression", "@", "#"}]}], "]"}], "&"}], ")"}]}], "\n", 
+    "\t", ",", " ", 
     RowBox[{"CellFrameLabels", " ", "->", " ", 
      RowBox[{"{", 
       RowBox[{
@@ -160,19 +161,22 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"None", ",", " ", "None"}], "}"}]}], "}"}]}]}], "\n", 
    "]"}]}]], "Code",
- CellChangeTimes->{3.786771782392929*^9, 
-  3.7867723635527315`*^9},ExpressionUUID->"57444c1b-0fe1-43d9-bfe8-\
+ CellChangeTimes->{
+  3.786771782392929*^9, 3.7867723635527315`*^9, 3.786776646670551*^9, {
+   3.786776765144311*^9, 
+   3.786776766244376*^9}},ExpressionUUID->"57444c1b-0fe1-43d9-bfe8-\
 bc5360706714"],
 
 Cell["\"a\" -> \"b\"", "Code",
  Evaluatable->True,
  CellEvaluationFunction->(Apply[
    Function[{$CellContext`fnlabel, $CellContext`fntext}, SelectionMove[
-      NextCell[CellStyle -> "Chapter"], Before, Cell]; NotebookWrite[
+      EvaluationCell[], After, Cell]; SelectionMove[
+      PreviousCell[CellStyle -> "FootnoteDocker"], After, Cell]; NotebookWrite[
       EvaluationNotebook[], 
       Cell[
        BoxData[
-        RowBox[{$CellContext`fntext, 
+        RowBox[{
           Cell[
            BoxData[
             ButtonBox[
@@ -184,7 +188,8 @@ Cell["\"a\" -> \"b\"", "Code",
              ButtonFunction :> NotebookLocate[
                StringJoin["FootnoteLabel", $CellContext`fnlabel]], Appearance -> 
              "Frameless", Evaluator -> Automatic, Method -> 
-             "Preemptive"]]]}]], "FootnoteText", CellTags -> {
+             "Preemptive"]]], $CellContext`fntext}]], "FootnoteText", 
+       CellTags -> {
          StringJoin["FootnoteText", $CellContext`fnlabel]}]]; NotebookWrite[
       EvaluationCell[], 
       Cell[
@@ -195,16 +200,16 @@ Cell["\"a\" -> \"b\"", "Code",
            DynamicBox[
             Refresh[
              Cell[
-              TextData[{"[", 
-                FrontEndExecute[
-                 FrontEnd`BoxReferenceRead[
-                  FE`BoxReference[
-                   
-                   EvaluationNotebook[], {{
-                    "FootnoteNum", $CellContext`fnlabel}}, FE`BoxOffset -> {
+              BoxData[
+               FrontEndExecute[
+                FrontEnd`BoxReferenceRead[
+                 FE`BoxReference[
+                  
+                  EvaluationNotebook[], {{
+                   "FootnoteNum", $CellContext`fnlabel}}, FE`BoxOffset -> {
                     FE`BoxChild[1]}, FE`SearchStart -> 
-                   "StartFromBeginning"]]], "]"}]], UpdateInterval -> 1]]], 
-          "Link"], ButtonFunction :> NotebookLocate[
+                  "StartFromBeginning"]]]]], UpdateInterval -> 1]]], "Link"], 
+         ButtonFunction :> NotebookLocate[
            StringJoin["FootnoteText", $CellContext`fnlabel]], Appearance -> 
          "Frameless", Evaluator -> Automatic, Method -> "Preemptive"]], 
        "FootnoteNum", CellTags -> {
@@ -214,15 +219,18 @@ Cell["\"a\" -> \"b\"", "Code",
  CellAutoOverwrite->True,
  CellFrameLabels->{{"Footnote:", None}, {None, None}},
  CellChangeTimes->{
-  3.786772365966323*^9},ExpressionUUID->"04640ca6-5c55-4393-b45f-\
-e2743e657054"]
+  3.786776766667723*^9},ExpressionUUID->"43e3a2bb-9365-4e98-8a54-\
+eaec6272aec9"]
 },
 WindowSize->{775, 553},
 WindowMargins->{{244, Automatic}, {Automatic, 54}},
 Magnification:>1.05 Inherited,
 FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (2017\:5e7410\:67082\
 \:65e5)",
-StyleDefinitions->"Default.nb"
+StyleDefinitions->FrontEnd`FileName[{
+   ParentDirectory[
+    ParentDirectory[]], "Sample"}, "SampleStylesheet.nb", CharacterEncoding -> 
+  "UTF-8"]
 ]
 (* End of Notebook Content *)
 
@@ -235,8 +243,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 7388, 144, 1442, "Code",ExpressionUUID->"57444c1b-0fe1-43d9-bfe8-bc5360706714"],
-Cell[7949, 166, 2024, 51, 51, "Code",ExpressionUUID->"04640ca6-5c55-4393-b45f-e2743e657054",
+Cell[558, 20, 7335, 147, 1266, "Code",ExpressionUUID->"57444c1b-0fe1-43d9-bfe8-bc5360706714"],
+Cell[7896, 169, 2074, 53, 51, "Code",ExpressionUUID->"43e3a2bb-9365-4e98-8a54-eaec6272aec9",
  Evaluatable->True]
 }
 ]
