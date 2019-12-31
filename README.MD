@@ -2,6 +2,8 @@
 	Directory "Quickstart" will include a stylesheet generator in the future.
 	The following description is written in Chinese.
 
+先钻研PublicationDefault吧。
+
 ## 功能定位
 * 单元样式
 	* 缩进
@@ -65,8 +67,7 @@
 	* 超链接
 		* 用CellTags标记单元，用ButtonBox和NotebookLocate来索引。
 	* 脚注
-		* 自动生成超链接和FootnoteText单元。此外，可以通过TaggingRules来像全局变量那样储存单元间的对应信息，取用则用CurrentValue。
-		* 是要求用户输入分割开了的单元，还是在文中由Esc快捷输入标记并对单元内容进行字符串匹配？有无两全之法？
-		* CounterBox仅仅是一个Box而不能被$BoxForms之一解释为表达式，MMASE讨论指出：CurrentValue[{"CounterValue", "Section"}]
+		* 使用Esc快捷键输入内嵌脚注单元，该单元可以计算，生成脚注标和脚注文本。链接标记数都由脚注文本单元决定，从而允许用户自己对脚注文本排序，而使脚注标记仍有效。链接由用户提供的标记来联系。
+		* 标记随用户对脚注文本顺序调整而自动更新是一个难点。
 	* 格式化标签（用于被格式化器处理）
 		* 格式化器通过匹配标签单元及其前面的一个单元，自动按照标签为前面的那个单元添加CellTags

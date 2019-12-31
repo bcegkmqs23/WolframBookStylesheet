@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     29119,        750]
-NotebookOptionsPosition[     19189,        577]
-NotebookOutlinePosition[     20042,        608]
-CellTagsIndexPosition[     19966,        603]
+NotebookDataLength[     29324,        731]
+NotebookOptionsPosition[     19237,        564]
+NotebookOutlinePosition[     19877,        588]
+CellTagsIndexPosition[     19834,        585]
 MenuPosition->1100
 WindowFrame->Normal*)
 
@@ -446,67 +446,25 @@ Cell[CellGroupData[{
 
 Cell["Footnote", "Subsection",ExpressionUUID->"c02ca7cb-bbf8-4bce-b0f8-74376589ea46"],
 
-Cell[RawData["\<\
-Cell[StyleData[\"FootnoteLabel\"],
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      ButtonBox[
-       Cell[
-        TextData[{\"[\", 
-          CounterBox[\"FootnoteText\"], \"]\"}], \"Link\"], ButtonFunction :> \
-(NotebookLocate[{\"FootnoteLabel\", 
-          CurrentValue[{\"CounterValue\", \"Chapter\"}], 
-          CurrentValue[{\"CounterValue\", \"FootnoteText\"}]}]& ), Appearance \
--> \"Frameless\", Evaluator -> Automatic, Method -> 
-       \"Preemptive\"]]], None}, {None, None}},
-       Editable->False,
- CounterIncrements->\"FootnoteLabel\"]\
-\>"],
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      ButtonBox[
-       Cell[
-        TextData[{"[", 
-          CounterBox["FootnoteText"], "]"}], "Link"], 
-       ButtonFunction :> (NotebookLocate[{"FootnoteLabel", 
-          CurrentValue[{"CounterValue", "Chapter"}], 
-          CurrentValue[{"CounterValue", "FootnoteText"}]}]& ), Appearance -> 
-       "Frameless", Evaluator -> Automatic, Method -> "Preemptive"]]], 
-    None}, {None, None}},
- CounterIncrements->"FootnoteText",
- CellTags->"FootnoteLabel"],
+Cell["\<\
+A FootnoteDocker groups all FootnoteText cells below it. Any docker should be \
+put before any cell which include corresponding footnote number.
+Further, I may make it possible to degenerate this method to manage(limit) \
+footnotes, or let user to choose docker to be at the end of a chapter(instead \
+of the beginning of a chapter).\
+\>", "Text",ExpressionUUID->"ac6a1f78-aee2-4904-b025-8eb909a768d5"],
 
-Cell[RawData["\<\
-Cell[StyleData[\"FootnoteText\"],
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      ButtonBox[
-       Cell[
-        TextData[{\"[\", 
-          CounterBox[\"FootnoteText\"], \"]\"}], \"Link\"], ButtonFunction :> \
-(NotebookLocate[{\"FootnoteLabel\", 
-          CurrentValue[{\"CounterValue\", \"Chapter\"}], 
-          CurrentValue[{\"CounterValue\", \"FootnoteText\"}]}]& ), Appearance \
--> \"Frameless\", Evaluator -> Automatic, Method -> 
-       \"Preemptive\"]]], None}, {None, None}},
- CounterIncrements->\"FootnoteText\"]\
-\>"],
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      ButtonBox[
-       Cell[
-        TextData[{"[", 
-          CounterBox["FootnoteText"], "]"}], "Link"], 
-       ButtonFunction :> (NotebookLocate[{"FootnoteLabel", 
-          CurrentValue[{"CounterValue", "Chapter"}], 
-          CurrentValue[{"CounterValue", "FootnoteText"}]}]& ), Appearance -> 
-       "Frameless", Evaluator -> Automatic, Method -> "Preemptive"]]], 
-    None}, {None, None}},
- CounterIncrements->"FootnoteText"]
+Cell[StyleData["FootnoteDocker"],
+ Editable->False,ExpressionUUID->"de64038c-3940-4016-904c-a9cb797845ba"],
+
+Cell["The style definition of footnote number", "Text",ExpressionUUID->"1817c0d5-06ee-4455-a428-1162f8c2832b"],
+
+Cell[StyleData["FootnoteNum"],
+ Editable->False,ExpressionUUID->"ef967dd2-1d0f-4929-8927-bfe7e34441e7"],
+
+Cell[StyleData["FootnoteText"],
+ CounterIncrements->
+  "FootnoteText",ExpressionUUID->"540645b1-e0bd-4de7-a23f-459eeddace50"]
 }, Open  ]]
 }, Open  ]],
 
@@ -525,25 +483,54 @@ Footnote Cell should include a list, which concludes a label string and a \
 content string.\
 \>", "Text",ExpressionUUID->"e789c842-94d9-4e70-a4cc-47c2253701c7"],
 
-Cell[RawData["\<\
-Cell[StyleData[\"InlineFootnote\"],
-Evaluatable->True,
- CellEvaluationFunction->(NotebookWrite[
-   EvaluationCell[], 
-   Cell[
-    BoxData[
-     ToBoxes[
-      Interpreter[\"TeXExpression\"][#]]], \"Equation\"]]& ),
- CellFrameLabels->{{\"Footnote:\", None}, {None, None}}]\
-\>"],
+Cell[StyleData["Footnote"],
  Evaluatable->True,
- CellEvaluationFunction->(NotebookWrite[
-   EvaluationCell[], 
-   Cell[
-    BoxData[
-     ToBoxes[
-      Interpreter["TeXExpression"][#]]], "Equation"]]& ),
- CellFrameLabels->{{"Footnote:", None}, {None, None}}]
+ CellEvaluationFunction->(Apply[
+   Function[{fnlabel, fntext}, SelectionMove[
+      EvaluationCell[], After, Cell]; SelectionMove[
+      PreviousCell[CellStyle -> "FootnoteDocker"], After, Cell]; NotebookWrite[
+      EvaluationNotebook[], 
+      Cell[
+       BoxData[
+        RowBox[{
+          Cell[
+           BoxData[
+            ButtonBox[
+             Cell[
+              TagBox[
+               RowBox[{"[", 
+                 CounterBox["FootnoteText"], "]"}], 
+               BoxID -> {"FootnoteNum", fnlabel}], "Link"], ButtonFunction :> 
+             NotebookLocate[
+               StringJoin["FootnoteLabel", fnlabel]], Appearance -> 
+             "Frameless", Evaluator -> Automatic, Method -> "Preemptive"]]], 
+          fntext}]], "FootnoteText", CellTags -> {
+         StringJoin["FootnoteText", fnlabel]}]]; NotebookWrite[
+      EvaluationCell[], 
+      Cell[
+       BoxData[
+        ButtonBox[
+         Cell[
+          BoxData[
+           DynamicBox[
+            Refresh[
+             Cell[
+              BoxData[
+               FrontEndExecute[
+                FrontEnd`BoxReferenceRead[
+                 FE`BoxReference[
+                  EvaluationNotebook[], {{"FootnoteNum", fnlabel}}, 
+                  FE`BoxOffset -> {
+                    FE`BoxChild[1]}, FE`SearchStart -> 
+                  "StartFromBeginning"]]]]], UpdateInterval -> 1]]], "Link"], 
+         ButtonFunction :> NotebookLocate[
+           StringJoin["FootnoteText", fnlabel]], Appearance -> "Frameless", 
+         Evaluator -> Automatic, Method -> "Preemptive"]], "FootnoteNum", 
+       CellTags -> {
+         StringJoin["FootnoteLabel", fnlabel]}]]], 
+   ToExpression[#]]& ),
+ CellFrameLabels->{{"Footnote:", None}, {
+   None, None}},ExpressionUUID->"00effd03-e55c-459e-944f-5a5222d57222"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -576,7 +563,7 @@ Cell[StyleData["TagToAdd"],ExpressionUUID->"358e714a-197c-4c20-b60d-8f70f73f8553
 }, Open  ]]
 },
 AutoGeneratedPackage->None,
-WindowSize->{866, 661},
+WindowSize->{867, 661},
 WindowMargins->{{Automatic, 139}, {Automatic, 33}},
 WindowFrame->"Normal",
 DockedCells->FEPrivate`FrontEndResource[
@@ -593,17 +580,10 @@ PrivateNotebookOptions -> {"NotebookAuthor" -> ""}
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{
- "FootnoteLabel"->{
-  Cell[15088, 448, 1087, 30, 244,ExpressionUUID->"af5ace62-3247-49f1-8cbd-93d8c30d9991",
-   CounterIncrements->"FootnoteText",
-   CellTags->"FootnoteLabel"]}
- }
+CellTagsIndex->{}
 *)
 (*CellTagsIndex
-CellTagsIndex->{
- {"FootnoteLabel", 19784, 596}
- }
+CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
@@ -727,29 +707,30 @@ Cell[CellGroupData[{
 Cell[14895, 442, 80, 0, 51, "Section",ExpressionUUID->"d097f4b6-17e2-40a9-8f38-e9847a9df3ac"],
 Cell[CellGroupData[{
 Cell[15000, 446, 85, 0, 46, "Subsection",ExpressionUUID->"c02ca7cb-bbf8-4bce-b0f8-74376589ea46"],
-Cell[15088, 448, 1087, 30, 244,ExpressionUUID->"af5ace62-3247-49f1-8cbd-93d8c30d9991",
- CounterIncrements->"FootnoteText",
- CellTags->"FootnoteLabel"],
-Cell[16178, 480, 1033, 28, 227,ExpressionUUID->"da51ecf6-5899-446d-8b14-dd241d7ba765",
+Cell[15088, 448, 412, 6, 81, "Text",ExpressionUUID->"ac6a1f78-aee2-4904-b025-8eb909a768d5"],
+Cell[15503, 456, 106, 1, 34, 33, 0, "StyleData", "FootnoteDocker", "All",ExpressionUUID->"de64038c-3940-4016-904c-a9cb797845ba"],
+Cell[15612, 459, 110, 0, 45, "Text",ExpressionUUID->"1817c0d5-06ee-4455-a428-1162f8c2832b"],
+Cell[15725, 461, 103, 1, 34, 30, 0, "StyleData", "FootnoteNum", "All",ExpressionUUID->"ef967dd2-1d0f-4929-8927-bfe7e34441e7"],
+Cell[15831, 464, 125, 2, 34, 31, 0, "StyleData", "FootnoteText", "All",ExpressionUUID->"540645b1-e0bd-4de7-a23f-459eeddace50",
  CounterIncrements->"FootnoteText"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17260, 514, 85, 0, 51, "Section",ExpressionUUID->"3af85b35-c187-4467-8c0b-0d7b6126300f"],
-Cell[17348, 516, 110, 0, 45, "Text",ExpressionUUID->"95f223d4-9884-4084-bc2d-5a80bb624885"],
+Cell[16005, 472, 85, 0, 51, "Section",ExpressionUUID->"3af85b35-c187-4467-8c0b-0d7b6126300f"],
+Cell[16093, 474, 110, 0, 45, "Text",ExpressionUUID->"95f223d4-9884-4084-bc2d-5a80bb624885"],
 Cell[CellGroupData[{
-Cell[17483, 520, 85, 0, 46, "Subsection",ExpressionUUID->"9b85802a-0413-410b-81c8-b2d773bec73e"],
-Cell[17571, 522, 170, 3, 45, "Text",ExpressionUUID->"e789c842-94d9-4e70-a4cc-47c2253701c7"],
-Cell[17744, 527, 529, 18, 176,ExpressionUUID->"92cca079-9d7f-45f8-b4c9-f9bccccf1439"]
+Cell[16228, 478, 85, 0, 46, "Subsection",ExpressionUUID->"9b85802a-0413-410b-81c8-b2d773bec73e"],
+Cell[16316, 480, 170, 3, 45, "Text",ExpressionUUID->"e789c842-94d9-4e70-a4cc-47c2253701c7"],
+Cell[16489, 485, 1832, 47, 34, 27, 0, "StyleData", "Footnote", "All",ExpressionUUID->"00effd03-e55c-459e-944f-5a5222d57222"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18310, 550, 90, 0, 46, "Subsection",ExpressionUUID->"e95bf86a-6358-4349-9608-f47f099f8591"],
-Cell[18403, 552, 457, 12, 34, 32, 0, "StyleData", "LaTeXEquation", "All",ExpressionUUID->"67cd8f03-a0f1-469b-8b4f-f80fcb1ffc48"]
+Cell[18358, 537, 90, 0, 46, "Subsection",ExpressionUUID->"e95bf86a-6358-4349-9608-f47f099f8591"],
+Cell[18451, 539, 457, 12, 34, 32, 0, "StyleData", "LaTeXEquation", "All",ExpressionUUID->"67cd8f03-a0f1-469b-8b4f-f80fcb1ffc48"]
 }, Open  ]],
-Cell[18875, 567, 86, 0, 46, "Subsection",ExpressionUUID->"b38d2e94-79d7-42a5-9d04-c6f6b451333e"],
+Cell[18923, 554, 86, 0, 46, "Subsection",ExpressionUUID->"b38d2e94-79d7-42a5-9d04-c6f6b451333e"],
 Cell[CellGroupData[{
-Cell[18986, 571, 90, 0, 30, "Subsection",ExpressionUUID->"c4c09ed8-ed2a-4a0a-a5f0-f86e94b0b2f3"],
-Cell[19079, 573, 82, 0, 34, 27, 0, "StyleData", "TagToAdd", "All",ExpressionUUID->"358e714a-197c-4c20-b60d-8f70f73f8553"]
+Cell[19034, 558, 90, 0, 30, "Subsection",ExpressionUUID->"c4c09ed8-ed2a-4a0a-a5f0-f86e94b0b2f3"],
+Cell[19127, 560, 82, 0, 34, 27, 0, "StyleData", "TagToAdd", "All",ExpressionUUID->"358e714a-197c-4c20-b60d-8f70f73f8553"]
 }, Open  ]]
 }, Open  ]]
 }

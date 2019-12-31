@@ -1,0 +1,364 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16321,        356]
+NotebookOptionsPosition[     14771,        323]
+NotebookOutlinePosition[     15344,        345]
+CellTagsIndexPosition[     15256,        340]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["This is a text cell.", "Text",
+ CellChangeTimes->{{3.786764371857304*^9, 
+  3.786764375409483*^9}},ExpressionUUID->"a8f1a865-eb58-4522-9be5-\
+78b6e9c91bf2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CellPrint", "[", "\n", "\t", 
+   RowBox[{"Cell", "[", "\n", "\t\t", 
+    RowBox[{
+    "\"\<footnotetext\>\"", ",", "\n", "\t\t", "\"\<Text\>\"", ",", 
+     "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"CellFrameLabels", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "\n", "\t\t\t", 
+         RowBox[{
+          RowBox[{"Cell", "[", 
+           RowBox[{
+            RowBox[{"BoxData", "[", 
+             RowBox[{"ButtonBox", "[", "\n", "\t\t\t\t", 
+              RowBox[{
+               RowBox[{"Cell", "[", "\n", "\t\t\t\t\t", 
+                RowBox[{"TagBox", "[", "\n", "\t\t\t\t\t\t", 
+                 RowBox[{
+                  RowBox[{"RowBox", "[", 
+                   RowBox[{"{", 
+                    RowBox[{"\"\<[\>\"", ",", 
+                    RowBox[{"CounterBox", "[", "\"\<Text\>\"", "]"}], ",", 
+                    "\"\<]\>\""}], "}"}], "]"}], "\n", "\t\t\t\t\t", ",", 
+                  RowBox[{"BoxID", "\[Rule]", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "\"\<FootnoteLabel\>\"", ",", "\"\<footnotelabel\>\""}], 
+                    "}"}]}]}], "]"}], "\n", "\t\t\t\t", "]"}], ",", "\n", 
+               "\t\t\t", 
+               RowBox[{"ButtonFunction", ":>", 
+                RowBox[{"(", 
+                 RowBox[{"NotebookLocate", "[", 
+                  RowBox[{
+                  "\"\<FootnoteLabel\>\"", "<>", "\"\<footnotelabel\>\""}], 
+                  "]"}], ")"}]}], ",", "\n", "\t\t\t", 
+               RowBox[{"Appearance", "\[Rule]", "\"\<Frameless\>\""}], ",", 
+               "\n", "\t\t\t", 
+               RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", "\n", 
+               "\t\t\t", 
+               RowBox[{"Method", "\[Rule]", "\"\<Preemptive\>\""}]}], "]"}], 
+             "]"}], "\n", "\t\t\t", ",", "\"\<Link\>\""}], "]"}], ",", "\n", 
+          "\t\t", "None"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"None", ",", "None"}], "}"}]}], "}"}]}], ",", "\n", "\t\t", 
+     RowBox[{"CellTags", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<FootnoteText\>\"", "<>", "\"\<footnotelabel\>\""}], 
+       "}"}]}]}], "\n", "\t", "]"}], "\n", "]"}], ";"}]], "Code",
+ CellChangeTimes->{
+  3.7864385687240314`*^9, {3.7864386572284584`*^9, 3.786438659728283*^9}, {
+   3.7864390066365037`*^9, 3.7864390167158685`*^9}, {3.7864390559733863`*^9, 
+   3.7864391513395967`*^9}, {3.7864391843575263`*^9, 3.786439241153921*^9}, {
+   3.786439423724373*^9, 3.786439463651868*^9}, {3.7864395028512497`*^9, 
+   3.7864395686961064`*^9}, {3.78643975036497*^9, 3.786439939833005*^9}, {
+   3.786439974480832*^9, 3.7864399825403233`*^9}, {3.786440015868218*^9, 
+   3.7864400567756166`*^9}, {3.786440089783549*^9, 3.78644011066223*^9}, {
+   3.7864402185653996`*^9, 3.7864402310446086`*^9}, {3.7864403073598056`*^9, 
+   3.7864403300261374`*^9}, {3.786440430675988*^9, 3.786440445225071*^9}, {
+   3.786440510650936*^9, 3.786440513300771*^9}, {3.786440815034069*^9, 
+   3.7864408329329586`*^9}, {3.7864409294315977`*^9, 3.786440943620702*^9}, {
+   3.7864411557573175`*^9, 3.786441157687196*^9}, {3.786442829197513*^9, 
+   3.7864428433966255`*^9}, {3.7864430251533165`*^9, 
+   3.7864430386583304`*^9}, {3.7864432907575893`*^9, 3.786443294497354*^9}, {
+   3.78644334452106*^9, 3.7864433725117693`*^9}, {3.786443436416787*^9, 
+   3.7864434530392838`*^9}, {3.7864435218783045`*^9, 3.786443606667728*^9}, {
+   3.786443758292531*^9, 3.7864437595624514`*^9}, {3.7864438047514687`*^9, 
+   3.786443829274705*^9}, {3.7864438783391085`*^9, 3.78644389335816*^9}, {
+   3.7864439583533673`*^9, 3.78644396052444*^9}, {3.7864440239352856`*^9, 
+   3.786444050520686*^9}, {3.7864448619171734`*^9, 3.7864449324989862`*^9}, {
+   3.7864455771327467`*^9, 3.7864456031561375`*^9}, {3.7864459202516336`*^9, 
+   3.7864459971018467`*^9}, {3.786446053579403*^9, 3.7864461813821073`*^9}, {
+   3.786446314345151*^9, 3.786446325944419*^9}, 3.786446508342284*^9, {
+   3.786447343511648*^9, 3.7864474039346247`*^9}, {3.7864474471969814`*^9, 
+   3.786447456526392*^9}, {3.7864479185322375`*^9, 3.7864479492672377`*^9}, {
+   3.7864479887394433`*^9, 3.786447998218844*^9}, {3.7864481284608393`*^9, 
+   3.7864481343704844`*^9}, {3.786448427614815*^9, 3.7864485862563457`*^9}, {
+   3.786448633075075*^9, 3.7864486407511415`*^9}, {3.786448716942256*^9, 
+   3.786448745201211*^9}, 3.7864487901511927`*^9, {3.786760388243449*^9, 
+   3.786760398284639*^9}, {3.7867612591919317`*^9, 3.7867612645133367`*^9}, {
+   3.786762282430131*^9, 3.786762314470654*^9}, {3.786762357619528*^9, 
+   3.7867623883580337`*^9}, {3.7867634788481464`*^9, 3.786763491850562*^9}, {
+   3.786764037038056*^9, 3.7867640371771345`*^9}, {3.7867640682640095`*^9, 
+   3.7867641007799444`*^9}},ExpressionUUID->"089ba43a-547d-405a-8b94-\
+13a5a818e5c0"],
+
+Cell["footnotetext", "Text",
+ GeneratedCell->True,
+ CellAutoOverwrite->True,
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      ButtonBox[
+       Cell[
+        TagBox[
+         RowBox[{"[", 
+           CounterBox["Text"], "]"}], 
+         BoxID -> {"FootnoteLabel", "footnotelabel"}]], ButtonFunction :> 
+       NotebookLocate[
+         StringJoin["FootnoteLabel", "footnotelabel"]], Appearance -> 
+       "Frameless", Evaluator -> Automatic, Method -> "Preemptive"]], "Link"],
+     None}, {None, None}},
+ CellChangeTimes->{3.786764407425014*^9},
+ CellTags->
+  "FootnoteTextfootnotelabel",ExpressionUUID->"96320dda-5c8d-493d-a38f-\
+cc858d0cafc6"],
+
+Cell[BoxData[
+ RowBox[{"CellPrint", "@", 
+  RowBox[{"Cell", "[", 
+   RowBox[{
+    RowBox[{"BoxData", "@", 
+     RowBox[{"DynamicBox", "@", 
+      RowBox[{"Refresh", "[", "\t", "\n", "\t\t", 
+       RowBox[{
+        RowBox[{"MathLink`CallFrontEnd", "@", 
+         RowBox[{"FrontEnd`BoxReferenceRead", "[", 
+          RowBox[{"FE`BoxReference", "[", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\n", "\t\t\t", 
+            RowBox[{"{", 
+             RowBox[{"{", 
+              RowBox[{"\"\<FootnoteLabel\>\"", ",", "\"\<footnotelabel\>\""}],
+               "}"}], "}"}], ",", "\n", "\t\t\t", 
+            RowBox[{"FE`BoxOffset", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"FE`BoxChild", "[", "1", "]"}], "}"}]}], ",", "\n", 
+            "\t\t\t", 
+            RowBox[{
+            "FE`SearchStart", "\[Rule]", "\"\<StartFromBeginning\>\""}]}], 
+           "]"}], "\n", "\t\t", "]"}]}], "\t", "\[IndentingNewLine]", "\t", 
+        ",", 
+        RowBox[{"UpdateInterval", "\[Rule]", "1"}]}], "]"}]}]}], "\n", ",", 
+    "\"\<Link\>\""}], "]"}]}]], "Code",
+ CellChangeTimes->{
+  3.7864385687240314`*^9, {3.7864386572284584`*^9, 3.786438659728283*^9}, {
+   3.7864390066365037`*^9, 3.7864390167158685`*^9}, {3.7864390559733863`*^9, 
+   3.7864391513395967`*^9}, {3.7864391843575263`*^9, 3.786439241153921*^9}, {
+   3.786439423724373*^9, 3.786439463651868*^9}, {3.7864395028512497`*^9, 
+   3.7864395686961064`*^9}, {3.78643975036497*^9, 3.786439939833005*^9}, {
+   3.786439974480832*^9, 3.7864399825403233`*^9}, {3.786440015868218*^9, 
+   3.7864400567756166`*^9}, {3.786440089783549*^9, 3.78644011066223*^9}, {
+   3.7864402185653996`*^9, 3.7864402310446086`*^9}, {3.7864403073598056`*^9, 
+   3.7864403300261374`*^9}, {3.786440430675988*^9, 3.786440445225071*^9}, {
+   3.786440510650936*^9, 3.786440513300771*^9}, {3.786440815034069*^9, 
+   3.7864408329329586`*^9}, {3.7864409294315977`*^9, 3.786440943620702*^9}, {
+   3.7864411557573175`*^9, 3.786441157687196*^9}, {3.786442829197513*^9, 
+   3.7864428433966255`*^9}, {3.7864430251533165`*^9, 
+   3.7864430386583304`*^9}, {3.7864432907575893`*^9, 3.786443294497354*^9}, {
+   3.78644334452106*^9, 3.7864433725117693`*^9}, {3.786443436416787*^9, 
+   3.7864434530392838`*^9}, {3.7864435218783045`*^9, 3.786443606667728*^9}, {
+   3.786443758292531*^9, 3.7864437595624514`*^9}, {3.7864438047514687`*^9, 
+   3.786443829274705*^9}, {3.7864438783391085`*^9, 3.78644389335816*^9}, {
+   3.7864439583533673`*^9, 3.78644396052444*^9}, {3.7864440239352856`*^9, 
+   3.786444050520686*^9}, {3.7864448619171734`*^9, 3.7864449324989862`*^9}, {
+   3.7864455771327467`*^9, 3.7864456031561375`*^9}, {3.7864459202516336`*^9, 
+   3.7864459971018467`*^9}, {3.786446053579403*^9, 3.7864461813821073`*^9}, {
+   3.786446314345151*^9, 3.786446325944419*^9}, 3.786446508342284*^9, {
+   3.786447343511648*^9, 3.7864474039346247`*^9}, {3.7864474471969814`*^9, 
+   3.786447456526392*^9}, {3.7864479185322375`*^9, 3.7864479492672377`*^9}, {
+   3.7864479887394433`*^9, 3.786447998218844*^9}, {3.7864481284608393`*^9, 
+   3.7864481343704844`*^9}, {3.786448427614815*^9, 3.7864485862563457`*^9}, {
+   3.786448633075075*^9, 3.7864486407511415`*^9}, {3.786448716942256*^9, 
+   3.786448745201211*^9}, 3.7864487901511927`*^9, {3.7864489281308084`*^9, 
+   3.7864489312010612`*^9}, {3.7864490201944227`*^9, 3.786449022164297*^9}, 
+   3.786449124168824*^9, {3.786752119675638*^9, 3.786752122025711*^9}, {
+   3.7867521692378635`*^9, 3.786752200111269*^9}, {3.786760296966735*^9, 
+   3.7867603424048185`*^9}, {3.7867604059184723`*^9, 
+   3.7867604178433285`*^9}, {3.7867608939505887`*^9, 
+   3.7867608969410496`*^9}, {3.7867612323054857`*^9, 3.7867612407705574`*^9}, 
+   3.7867623908101997`*^9, {3.786763588700057*^9, 3.786763622569089*^9}, {
+   3.786763757884467*^9, 3.78676377469839*^9}, {3.7867638154657254`*^9, 
+   3.786763842509676*^9}, {3.7867638787491946`*^9, 3.786763900927912*^9}, {
+   3.786763937285269*^9, 3.7867639397990036`*^9}, {3.7867641027009497`*^9, 
+   3.7867641051201687`*^9}},ExpressionUUID->"814f51d5-ea5c-46c0-9ed5-\
+a9a5f0cde84c"],
+
+Cell[BoxData[
+ DynamicBox[Refresh[
+   MathLink`CallFrontEnd[
+    FrontEnd`BoxReferenceRead[
+     FE`BoxReference[
+      EvaluationNotebook[], {{"FootnoteLabel", "footnotelabel"}}, 
+      FE`BoxOffset -> {
+        FE`BoxChild[1]}, FE`SearchStart -> "StartFromBeginning"]]], 
+   UpdateInterval -> 1],
+  ImageSizeCache->{42., {1., 10.}}]], "Link",
+ GeneratedCell->True,
+ CellAutoOverwrite->True,
+ CellChangeTimes->{
+  3.786764407551941*^9},ExpressionUUID->"99e212bc-d88b-473f-b3be-\
+ffad545723f0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FrontEndExecute", "@", 
+  RowBox[{"FrontEnd`BoxReferenceRead", "[", 
+   RowBox[{"FE`BoxReference", "[", "\n", "\t\t\t", 
+    RowBox[{
+     RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\n", "\t\t\t", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\"\<aaa\>\"", ",", "\"\<bbb\>\""}], "}"}], "}"}], ",", "\n", 
+     "\t\t\t", 
+     RowBox[{"FE`BoxOffset", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"FE`BoxChild", "[", "1", "]"}], "}"}]}], ",", "\n", "\t\t\t", 
+     RowBox[{"FE`SearchStart", "\[Rule]", "\"\<StartFromBeginning\>\""}]}], 
+    "]"}], "\n", "\t\t", "]"}]}]], "Input",
+ CellChangeTimes->{{3.786764173827607*^9, 3.786764176992978*^9}, {
+  3.7867643495103292`*^9, 
+  3.7867643513604584`*^9}},ExpressionUUID->"b956bdfb-92cb-456b-a900-\
+f64f3a4df49f"],
+
+Cell[BoxData[
+ RowBox[{"CounterBox", "[", "\<\"Text\"\>", "]"}]], "Output",
+ CellChangeTimes->{{3.7867641690221314`*^9, 3.7867641773357735`*^9}, {
+  3.786764292909515*^9, 3.7867643152312393`*^9}, {3.786764351906906*^9, 
+  3.7867644076218996`*^9}},ExpressionUUID->"e2bba171-fbb3-46c0-8fff-\
+ef96d822f992"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CellPrint", "@", 
+  RowBox[{"Cell", "@", 
+   RowBox[{"BoxData", "@", 
+    RowBox[{"CounterBox", "[", 
+     RowBox[{"\"\<Text\>\"", ",", 
+      RowBox[{"BoxID", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\"\<aaa\>\"", ",", "\"\<bbb\>\""}], "}"}]}]}], 
+     "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7867585456226463`*^9, 3.786758631217078*^9}, {
+  3.7867589600508504`*^9, 3.786758981452741*^9}, {3.7867590184740715`*^9, 
+  3.7867590217959476`*^9}, {3.78675939859758*^9, 3.7867593994268723`*^9}, {
+  3.7867629615748725`*^9, 3.786762970501914*^9}, {3.7867643096874504`*^9, 
+  3.7867643110166693`*^9}, {3.7867644127869062`*^9, 
+  3.7867644465530105`*^9}},ExpressionUUID->"0194bafc-3819-49fc-9ace-\
+023579843d22"],
+
+Cell[BoxData[
+ CounterBox["Text"]],
+ GeneratedCell->True,
+ CellAutoOverwrite->True,
+ CellChangeTimes->{
+  3.786764446864622*^9},ExpressionUUID->"81d4574e-f94e-48a5-a442-\
+4b00650ed53d"],
+
+Cell[BoxData[
+ RowBox[{"CellPrint", "@", 
+  RowBox[{"Cell", "[", "\n", "\t", 
+   RowBox[{
+    RowBox[{"BoxData", "@", 
+     RowBox[{"DynamicBox", "@", 
+      RowBox[{"Refresh", "[", "\n", "\t\t", 
+       RowBox[{
+        RowBox[{"MathLink`CallFrontEnd", "@", 
+         RowBox[{"FrontEnd`BoxReferenceRead", "[", 
+          RowBox[{"FE`BoxReference", "[", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\n", "\t\t\t", 
+            RowBox[{"{", 
+             RowBox[{"{", 
+              RowBox[{"\"\<aaa\>\"", ",", "\"\<bbb\>\""}], "}"}], "}"}], ",", 
+            "\n", "\t\t\t", 
+            RowBox[{"FE`BoxOffset", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"FE`BoxChild", "[", "1", "]"}], "}"}]}], ",", "\n", 
+            "\t\t\t", 
+            RowBox[{
+            "FE`SearchStart", "\[Rule]", "\"\<StartFromBeginning\>\""}]}], 
+           "]"}], "\n", "\t\t", "]"}]}], "\[IndentingNewLine]", "\t", ",", 
+        RowBox[{"UpdateInterval", "\[Rule]", "1"}]}], "]"}]}]}], ",", "\n", 
+    "\"\<Link\>\""}], "]"}]}]], "Code",
+ CellChangeTimes->{{3.7867609838791285`*^9, 3.7867610574261208`*^9}, {
+  3.7867618178759556`*^9, 3.7867618418055334`*^9}, {3.7867626664405527`*^9, 
+  3.78676266955546*^9}, {3.786762982332596*^9, 3.78676298674391*^9}, {
+  3.7867643068850517`*^9, 
+  3.7867643080543776`*^9}},ExpressionUUID->"0fa53d42-df4e-4e21-bd09-\
+6064e411ec9e"],
+
+Cell[BoxData[
+ DynamicBox[Refresh[
+   MathLink`CallFrontEnd[
+    FrontEnd`BoxReferenceRead[
+     FE`BoxReference[
+      EvaluationNotebook[], {{"aaa", "bbb"}}, FE`BoxOffset -> {
+        FE`BoxChild[1]}, FE`SearchStart -> "StartFromBeginning"]]], 
+   UpdateInterval -> 1],
+  ImageSizeCache->{6., {0., 9.}}]], "Link",
+ GeneratedCell->True,
+ CellAutoOverwrite->True,
+ CellChangeTimes->{
+  3.7867644484181023`*^9},ExpressionUUID->"4359e257-e7b9-4692-9146-\
+582533f2dd04"]
+},
+WindowSize->{759, 533},
+WindowMargins->{{Automatic, 252}, {Automatic, 64}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (2017\:5e7410\:67082\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "FootnoteTextfootnotelabel"->{
+  Cell[5533, 112, 646, 19, 37, "Text",ExpressionUUID->"96320dda-5c8d-493d-a38f-cc858d0cafc6",
+   CellTags->"FootnoteTextfootnotelabel"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"FootnoteTextfootnotelabel", 15095, 334}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 162, 3, 34, "Text",ExpressionUUID->"a8f1a865-eb58-4522-9be5-78b6e9c91bf2"],
+Cell[723, 25, 4807, 85, 433, "Code",ExpressionUUID->"089ba43a-547d-405a-8b94-13a5a818e5c0"],
+Cell[5533, 112, 646, 19, 37, "Text",ExpressionUUID->"96320dda-5c8d-493d-a38f-cc858d0cafc6",
+ CellTags->"FootnoteTextfootnotelabel"],
+Cell[6182, 133, 4119, 68, 213, "Code",ExpressionUUID->"814f51d5-ea5c-46c0-9ed5-a9a5f0cde84c"],
+Cell[10304, 203, 494, 14, 24, "Link",ExpressionUUID->"99e212bc-d88b-473f-b3be-ffad545723f0"],
+Cell[CellGroupData[{
+Cell[10823, 221, 798, 18, 177, "Input",ExpressionUUID->"b956bdfb-92cb-456b-a900-f64f3a4df49f"],
+Cell[11624, 241, 304, 5, 34, "Output",ExpressionUUID->"e2bba171-fbb3-46c0-8fff-ef96d822f992"]
+}, Open  ]],
+Cell[11943, 249, 742, 16, 47, "Input",ExpressionUUID->"0194bafc-3819-49fc-9ace-023579843d22"],
+Cell[12688, 267, 185, 6, 24, InheritFromParent,ExpressionUUID->"81d4574e-f94e-48a5-a442-4b00650ed53d"],
+Cell[12876, 275, 1421, 31, 233, "Code",ExpressionUUID->"0fa53d42-df4e-4e21-bd09-6064e411ec9e"],
+Cell[14300, 308, 467, 13, 24, "Link",ExpressionUUID->"4359e257-e7b9-4692-9146-582533f2dd04"]
+}
+]
+*)
+
